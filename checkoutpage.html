@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout Page</title>
+<meta charset = "UTF-8">
+<link href = "background.css" rel="stylesheet">
+<script type = "text/javascript"  src = "Script.js">
+    </script>
+</head>
+<body>
+<header><h2></br></br></br><img src="easy.gif" alt="Welcome to easy shopping!" /></h2> </header>
+<div class="topnav">
+  <a class="active" href="HomePage.html">Home</a>
+  <a <a href = "LoginPage.html" alignment="center" > Login </a>
+	<a href = "RegisterPage.html" alignment="center" > Register </a>
+	<a href = "productsPage.html" alignment="center" > Products </a>
+	<a href = "AboutUsPage.html" alignment="center" > About Us </a>
+	
+</div>
+</br>
+<div class="box">
+    <div class="containers">
+      <form action="/action_page.php">
+          <div>
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+            <input class="in" type="text" id="fname" name="firstname" placeholder=" First Name" >
+            <label for="email"><i class="fa fa-envelope"></i>Email</label>
+            <input class="in" type="text" id="femail" name="email" placeholder="examlple@gmail.com" onfocus = "showmemail()" onblur="hidememail()" onkeyup="checkEm()">
+				<div id="Emailmessage">
+
+				<h3>Email must contain the following:</h3>
+				<p id="Esign" class="invalid">A <b>@</b> sign</p>
+
+				</div>
+            <label for="adr"><i class="fa fa-address-card-o"></i>Address</label>
+            <input class="in" type="text" id="adr" name="address" placeholder="Address">
+            <label for="city"><i class="fa fa-institution"></i>City</label>
+            <input class="in" type="text" id="city" name="city" placeholder="City">
+            <div class="row">
+            <div>
+                <label for="state">State</label>
+                <input class="in" type="text" id="state" name="state" placeholder="State">
+              </div>
+              <div>
+                <label for="zip">Zip</label>
+                <input class="in" type="text" id="zip" name="zip" placeholder="00000"  onfocus = "showmZ()" onblur="hidemZ()" onkeyup="checkZ()" maxlength="5">
+              </div>
+				<div id="Zmessage">
+
+				<h3>Zip Code must contain the following:</h3>
+				<p id="z" class="invalid">Must be <b>only</b> numbers </p>
+				<p id="zi" class="invalid">Must <b>5</b> digit number</p>
+
+				</div>
+            </div>
+          </div>
+
+          <div>
+            <h1>Card detail</h1>
+                  
+            <label for="cname">Name on Card</label>
+            <input class="in" type="text" id="cname" name="cardname" placeholder="Name">
+            <label for="ccnum">Credit card number</label>
+            <input class="in" type="text" id="ccnum" name="cardnumber" placeholder="0000000000000000" onfocus = "showmC()" onblur="hidemC()" onkeyup="checkC()" maxlength="16">
+			
+				<div id="Cmessage">
+
+				<h3>Card Number must contain the following:</h3>
+				<p id="cn" class="invalid">Must be <b>only</b> numbers </p>
+				<p id="cnd" class="invalid">Must a <b>16</b> digit number</p>
+
+				</div>
+				
+            <label for="expmonth">Exp Month</label>
+            <input class="in" type="text" id="expmonth" name="expmonth" placeholder="00">
+
+            <div class="row">
+              <div>
+                <label for="expyear">Exp Year</label>
+                <input class="in" type="text" id="expyear" name="expyear" placeholder="0000">
+              </div>
+              <div >
+                <label for="cvv">CVV</label>
+                <input class="in" type="text" id="cvvcode" name="cvv" placeholder="000" onfocus = "showmCV()" onblur="hidemCV()" onkeyup="checkCV()" maxlength="3">
+					<div id="CVmessage">
+
+					<h3>Security Code must contain the following:</h3>
+					<p id="cvn" class="invalid">Must be <b>only</b> numbers </p>
+					<p id="cvnd" class="invalid">Must a <b>3</b> digit number</p>
+
+					</div>
+              </div>
+            </div>
+			
+          </div>
+
+        
+        <input type="button" value="Confirm order" class="btn" onclick="Pay()">
+		
+
+      </form>
+	  
+</div>
+ </div>
+</body>
+<footer> <font color="White">Created by Elbachir Chohaib and Luis Tuapante</font> </footer>
+
+</html>

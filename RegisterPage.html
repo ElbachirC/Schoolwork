@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Page</title>
+<meta charset = "UTF-8">
+<link href = "background.css" rel="stylesheet">
+<script type = "text/javascript"  src = "Script.js" >
+    </script>
+</head>
+<body>
+<header><h2></br></br></br><img src="easy.gif" alt="Welcome to easy shopping!" /></h2> </header>
+<div class="topnav">
+  <a class="active" href="HomePage.html">Home</a>
+  <a <a href = "LoginPage.html" alignment="center" > Login </a>
+	<a href = "RegisterPage.html" alignment="center" id="Registration" > Register </a>
+	<a href = "productsPage.html" alignment="center" > Products </a>
+	<a href = "AboutUsPage.html" alignment="center" > About Us </a>
+</div>
+</br></br>
+<h1><img src="join.gif" alt="Join us! And become a member of Easy Shopping" /> </h1>
+<div class="reg">
+<h3>Please Enter</h3>
+<form action = "" id="registerform" >
+<label>First Name: <input  type="text" maxlength="12" id="name" oninvalid="alert('You must fill out the form!');" required>      </label></br></br>
+<label>Last Name: <input  type="text" maxlength="12" id="lastname" oninvalid="alert('You must fill out the form!');" required>   </label></br></br>
+<label>Username: <input  type="text" name="usernam" maxlength="12" id="username" oninvalid="alert('You must fill out the form!');" required>   </label></br></br>
+<label>Password: <input type="password" name="passwor" maxlength="12" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onfocus = "showm()" onblur="hidem()" onkeyup="checkrequirements()" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>   </label></br></br>
+		<div id="message">
+		<h3>Password must contain the following:</h3>
+		<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+		<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+		<p id="number" class="invalid">A <b>number</b></p>
+		<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+		</div>
+
+<label>Email: <input  type="text" maxlength="20" id="email" onfocus = "showme()" onblur="hideme()" onkeyup="checkE()" required>   </label></br></br>
+<div id="Emessage">
+
+  <h3>Email must be the following:</h3>
+  <p id="sign" class="invalid">example<b>@</b>example.com</p>
+
+</div>
+</br>
+<input type="button" value="Submit" onclick="inputInfo()"  style="color:red;background-color:#000;text-align:center;font-size:16px;width: 180px;"></br></br>
+<input type="reset" value="Cancel" onclick="" id="cancel" style="color:red;background-color:#000;text-align:center;font-size:16px;width: 180px;">
+
+</br></br>
+<a href="LoginPage.html">Already have an account? Click here. </a>
+</br></br>
+
+
+
+
+
+
+</form>
+
+</div>
+</br>
+
+
+
+
+</body>
+<footer> <font color="White">Created by Elbachir Chohaib and Luis Tuapante</font> </footer>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link href = "background.css" rel="stylesheet">
+	<title>LoginPage</title>
+	<script type = "text/javascript"  src = "Script.js" >
+    </script>
+</head>
+<body>
+<header><h2></br></br></br><img src="easy.gif" alt="Welcome to easy shopping!" /></h2> </header>
+<div class="topnav">
+  <a class="active" href="HomePage.html">Home</a>
+  <a <a href = "LoginPage.html" alignment="center" > Login </a>
+	<a href = "RegisterPage.html" alignment="center" > Register </a>
+	<a href = "productsPage.html" alignment="center" > Products </a>
+	<a href = "AboutUsPage.html" alignment="center" > About Us </a>
+</div>
+</br></br>
+<h1>Login to your Easy Shopping account</h1>
+<div class="loginpage">
+</br>
+<h3>Please Enter</h3>
+</br></br>
+
+<form action = "" id="loginform">
+<label>Username: <input  type="text" name="username" maxlength="12" id="loginusername" oninvalid="alert('You must fill out the form!');" required></label></br></br></br></br>
+<label>Password: <input  type="password" name="Password" maxlength="12" id="loginpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onfocus = "showmL()" onblur="hidemL()" onkeyup="checkrequirementsL()" required></label></br></br></br></br>
+	<div id="Logmessage">
+	<h3>Password must contain the following:</h3>
+	<p id="l" class="invalid">A <b>lowercase</b> letter</p>
+	<p id="c" class="invalid">A <b>capital (uppercase)</b> letter</p>
+	<p id="n" class="invalid">A <b>number</b></p>
+	<p id="le" class="invalid">Minimum <b>8 characters</b></p>
+	</div>
+<input type="button" value="Login" onclick="login()" style="color:red;background-color:#000;text-align:center;font-size:16px;width: 180px;" ></br></br>
+<input type="reset" value="Cancel" style="color:red;background-color:#000;text-align:center;font-size:16px;width: 180px;">
+
+</br></br>
+<a href="RegisterPage.html"> <b> Don't have an account? Click here. </b> </a>
+</br>
+
+
+</div>
+
+
+</form>
+</br> </br>
+
+</body>
+<footer> <font color="White">Created by Elbachir Chohaib and Luis Tuapante</font> </footer>
+</html>
